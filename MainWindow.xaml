@@ -1,0 +1,61 @@
+﻿<Window x:Class="Lab_CarSimulation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_CarSimulation"
+        mc:Ignorable="d"
+        Title="Kelem Nyarko-Car Simulation" Height="550" Width="900" Icon="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\car.jpg" ResizeMode="NoResize">
+    <Grid Height="525" VerticalAlignment="Top" HorizontalAlignment="Right" Width="890" Margin="0,0,10,0">
+        <CheckBox x:Name="chkNo_Key" Content="No Key" HorizontalAlignment="Left" Margin="32,71,0,0" VerticalAlignment="Top" Width="63" Checked="chkNo_Key_Checked"/>
+        <CheckBox x:Name="chkKey_On" Content="Key On" HorizontalAlignment="Left" Margin="32,123,0,0" VerticalAlignment="Top" Height="22" Width="61" Checked="chkKey_On_Checked"/>
+        <CheckBox x:Name="chkKey_Acc" Content="Key Acc" HorizontalAlignment="Left" Margin="32,145,0,0" VerticalAlignment="Top" Width="63"/>
+        <CheckBox x:Name="chkKey_Off" Content="Key Off" HorizontalAlignment="Left" Margin="32,97,0,0" VerticalAlignment="Top" Width="60" Checked="chkKey_Off_Checked"/>
+        <Label x:Name="lblGear_Shift" Content="GEAR SHIFT" HorizontalAlignment="Left" Margin="276,33,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radPark" Content="Park" HorizontalAlignment="Left" Margin="283,66,0,0" VerticalAlignment="Top" Checked="radPark_Checked" IsChecked="True"/>
+        <RadioButton x:Name="radDrive" Content="Drive" HorizontalAlignment="Left" Margin="283,91,0,0" VerticalAlignment="Top" Checked="radDrive_Checked"/>
+        <RadioButton x:Name="radReverse" Content="Reverse" HorizontalAlignment="Left" Margin="283,121,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radNeutral" Content="Neutral" HorizontalAlignment="Left" Margin="283,148,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="imgSeatbelt" HorizontalAlignment="Left" Height="41" Margin="62,201,0,0" VerticalAlignment="Top" Width="44" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\seatbelt icon.png"/>
+        <CheckBox x:Name="chkDoor_Open___Close" Content="Door Closed / Opened(Check to CLOSE)" HorizontalAlignment="Left" Margin="32,165,0,0" VerticalAlignment="Top" Width="232" Checked="chkDoor_Open___Close_Checked"/>
+        <Label x:Name="lblLights" Content="LIGHTS" HorizontalAlignment="Left" Margin="398,33,0,0" VerticalAlignment="Top" Width="69"/>
+        <Image x:Name="imgBrake_Left" HorizontalAlignment="Left" Height="51" Margin="380,217,0,0" VerticalAlignment="Top" Width="58" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\brake light left.JPG" Visibility="Collapsed"/>
+        <Image x:Name="imgBrake_Right" HorizontalAlignment="Left" Height="51" Margin="493,217,0,0" VerticalAlignment="Top" Width="58" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\brake light right.jpg" Visibility="Collapsed"/>
+        <Label x:Name="lblHazards" Content="HAZARD LIGHTS" HorizontalAlignment="Left" Margin="398,97,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblHeadLights" Content="HEADLIGHT" HorizontalAlignment="Left" Margin="531,88,0,0" VerticalAlignment="Top" Width="81"/>
+        <Image x:Name="imgHeadLeft" HorizontalAlignment="Left" Height="51" Margin="636,291,0,0" VerticalAlignment="Top" Width="58" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\headleft.JPG" Visibility="Collapsed"/>
+        <Image x:Name="imgHeadRight" HorizontalAlignment="Left" Height="51" Margin="794,289,0,0" VerticalAlignment="Top" Width="58" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\headright.JPG" Visibility="Collapsed"/>
+        <Label x:Name="lblIgnition" Content="IGNITION" HorizontalAlignment="Left" Margin="32,33,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTurns" Content="TURN SIGNALS" HorizontalAlignment="Left" Margin="640,33,0,0" VerticalAlignment="Top" Width="95"/>
+        <CheckBox x:Name="chkLeft_Turn" Content="Left Turn" HorizontalAlignment="Left" Margin="640,66,0,0" VerticalAlignment="Top" Checked="chkLeft_Turn_Checked"/>
+        <CheckBox x:Name="chkRight_Turn" Content="Right Turn" HorizontalAlignment="Left" Margin="640,95,0,0" VerticalAlignment="Top" Checked="chkRight_Turn_Checked"/>
+        <CheckBox x:Name="chkTurn_Signal_Off" Content="Turn Signals Off" HorizontalAlignment="Left" Margin="640,125,0,0" VerticalAlignment="Top" Width="120" Checked="chkTurn_Signal_Off_Checked"/>
+        <Image x:Name="imgLeftTurn" HorizontalAlignment="Left" Height="44" Margin="313,215,0,0" VerticalAlignment="Top" Width="63" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\LeftTurn.jpg" Visibility="Collapsed"/>
+        <CheckBox x:Name="chkbeltOn" Content="Seatbelt On" HorizontalAlignment="Left" Margin="32,251,0,0" VerticalAlignment="Top" Width="88" Checked="chkbeltOn_Checked"/>
+        <CheckBox x:Name="chkBeltOff" Content="Seatbelt Off" HorizontalAlignment="Left" Margin="125,251,0,0" VerticalAlignment="Top" Width="88" Checked="chkBeltOff_Checked"/>
+        <CheckBox x:Name="chkBrakeOn" Content="Brake On" HorizontalAlignment="Left" Margin="395,64,0,0" VerticalAlignment="Top" Checked="chkBrakeOn_Checked"/>
+        <CheckBox x:Name="chkBrakeOff" Content="Brake Off" HorizontalAlignment="Left" Margin="480,64,0,0" VerticalAlignment="Top" Checked="chkBrakeOff_Checked"/>
+        <CheckBox x:Name="chkHazOn" Content="Hazards On" HorizontalAlignment="Left" Margin="399,125,0,0" VerticalAlignment="Top" Checked="chkHazOn_Checked"/>
+        <CheckBox x:Name="chkHazOff" Content="Hazarads Off" HorizontalAlignment="Left" Margin="399,148,0,0" VerticalAlignment="Top" Checked="chkHazOff_Checked"/>
+        <CheckBox x:Name="chkHead_On" Content="Head Light On" HorizontalAlignment="Left" Margin="515,114,0,0" VerticalAlignment="Top" Checked="chkHead_On_Checked"/>
+        <CheckBox x:Name="chkHeadAuto" Content="Head Light Auto" HorizontalAlignment="Left" Margin="515,136,0,0" VerticalAlignment="Top" Checked="chkHeadAuto_Checked"/>
+        <CheckBox x:Name="chkHead_Off" Content="Head Light Off" HorizontalAlignment="Left" Margin="515,157,0,0" VerticalAlignment="Top" Checked="chkHead_Off_Checked"/>
+        <Image x:Name="imgRightTurn" HorizontalAlignment="Left" Height="44" Margin="563,217,0,0" VerticalAlignment="Top" Width="63" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\RightTurn.jpg" Visibility="Collapsed"/>
+        <Image x:Name="imgDome" HorizontalAlignment="Left" Height="58" Margin="742,270,0,0" VerticalAlignment="Top" Width="40" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\dome.jpg" Visibility="Collapsed"/>
+        <Label x:Name="lblDOme_Light" Content="DOME LIGHT" HorizontalAlignment="Left" Margin="769,33,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkDome_On" Content="Dome Light On" HorizontalAlignment="Left" Margin="769,66,0,0" VerticalAlignment="Top" Checked="chkDome_On_Checked"/>
+        <CheckBox x:Name="chkDome_Auto" Content="Dome Light Auto" HorizontalAlignment="Left" Margin="769,88,0,0" VerticalAlignment="Top" Checked="chkDome_Auto_Checked"/>
+        <CheckBox x:Name="chkDome_Off" Content="Dome Light Off" HorizontalAlignment="Left" Margin="769,108,0,0" VerticalAlignment="Top" Checked="chkDome_Off_Checked"/>
+        <MediaElement x:Name="medWind_Wiper" HorizontalAlignment="Left" Height="85" Margin="32,324,0,0" VerticalAlignment="Top" Width="163" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\Windscreen_Wiper.gif" LoadedBehavior="Manual" Loaded="medWind_Wiper_Loaded" MediaEnded="medWind_Wiper_MediaEnded"/>
+        <CheckBox x:Name="chkWiper_On" Content="Wiper On" HorizontalAlignment="Left" Margin="32,290,0,0" VerticalAlignment="Top" Checked="chkWiper_On_Checked"/>
+        <CheckBox x:Name="chkWiper_Off" Content="Wiper Off" HorizontalAlignment="Left" Margin="117,291,0,0" VerticalAlignment="Top" Checked="chkWiper_Off_Checked"/>
+        <CheckBox x:Name="chkWiper_Auto" Content="Wiper Auto" HorizontalAlignment="Left" Margin="203,291,0,0" VerticalAlignment="Top" Checked="chkWiper_Auto_Checked"/>
+        <MediaElement x:Name="medRadio_Player" HorizontalAlignment="Left" Height="68" Margin="366,324,0,0" VerticalAlignment="Top" Width="100" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Music\Radio_Music.mp3" LoadedBehavior="Manual" Loaded="medRadio_Player_Loaded" MediaEnded="medRadio_Player_MediaEnded"/>
+        <CheckBox x:Name="chkCar_Radio_On" Content="Radio On" HorizontalAlignment="Left" Margin="347,290,0,0" VerticalAlignment="Top" Checked="chkCar_Radio_On_Checked"/>
+        <CheckBox x:Name="chkCar_Radio_Off" Content="Radio Off" HorizontalAlignment="Left" Margin="443,291,0,0" VerticalAlignment="Top" Checked="chkCar_Radio_Off_Checked"/>
+        <Image x:Name="imgRadio_Icon" HorizontalAlignment="Left" Height="51" Margin="366,324,0,0" VerticalAlignment="Top" Width="98" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\CarRadio.JPG" Visibility="Collapsed" Stretch="Fill"/>
+        <Button x:Name="btnClose" Content="CLOSE" HorizontalAlignment="Left" Margin="726,450,0,0" VerticalAlignment="Top" Width="56" Click="btnClose_Click"/>
+        <MediaElement x:Name="medDashboard" HorizontalAlignment="Left" Height="86" Margin="385,395,0,0" VerticalAlignment="Top" Width="164" Source="C:\Users\kelem\source\repos\Lab_CarSimulation\Images\Dashboard_Start.gif" Stretch="Fill" LoadedBehavior="Manual" Loaded="medDashboard_Loaded" MediaEnded="medDashboard_MediaEnded"/>
+
+    </Grid>
+</Window>
