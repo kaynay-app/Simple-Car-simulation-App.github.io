@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uytslODYJjuaMIa6Qn45v/B8b9eCpY5bjPpUUnu5O3WWeXc7J63nVS8sLWB7MNfzPXuLXMovyZVwpYihtRiJOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kelem\\source\\repos\\Lab_CarSimulation\\Lab_CarSimulation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kelem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
